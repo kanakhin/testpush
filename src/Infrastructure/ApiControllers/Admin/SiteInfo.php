@@ -46,6 +46,7 @@ class SiteInfo
             'id' => $site_info->id,
             //host сайта
             'host' => $site_info->host,
+            'test' => 1,
             //Информация для интеграции кода на сайт
             'javascript' => $site_info->inline_code
         ];
