@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * Точка входа для консольных комманд
+ */
+
+if (PHP_SAPI !== 'cli') {
+    echo "Скрипт может быть запущен только из командной строки\n";
+    exit;
+}
+
+require 'vendor/autoload.php';
+
+use Kanakhin\Push\Infrastructure\Core;
+
+$application = Core::Console();
+$application->run();

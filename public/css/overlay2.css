@@ -1,0 +1,52 @@
+.overlay2 {
+	border-radius: 10px;
+	border: 1px solid #efefef;
+	width: 320px;
+	padding: 10px;
+	box-shadow: 0 0 5px #c5c5c5;
+	position: fixed;
+	margin: 0 auto;
+	top: 10px;
+	left: 0;
+	right: 0;
+	z-index: 7999;
+	box-sizing: border-box;
+}
+
+.overlay2__title {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.overlay2__title--text {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.overlay2__title--close {
+	position: absolute;
+	top: -15px;
+	right: 0;
+	color: #000000;
+	font-weight: normal;
+	font-size: 30px;
+	font-family: 'Open Sans', sans-serif;
+	cursor: pointer;
+	height: 41px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.overlay2__body {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.overlay2__button {
+	max-width: max-content;
+	padding: 5px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}

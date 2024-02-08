@@ -1,0 +1,10 @@
+/nbproject/
+.idea
+/vendor/
+/config.php
+/.htaccess
+/fk-push-worker.js
+/index.html
+/var/log/
+/var/
+/composer.lock
