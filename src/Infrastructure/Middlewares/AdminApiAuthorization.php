@@ -8,7 +8,7 @@ declare(strict_types=1);
 
 namespace Kanakhin\Push\Infrastructure\Middlewares;
 
-use Kanakhin\Push\Infrastructure\Core;
+use Kanakhin\Push\Core;
 use League\Route\Http\Exception\ForbiddenException;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -22,7 +22,7 @@ class AdminApiAuthorization implements MiddlewareInterface
      */
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler) : ResponseInterface
     {
-        $config = Core::$services->get(\Kanakhin\Push\Infrastructure\Config::Class);
+        $config = Core::$services->get(\Kanakhin\Push\Config::Class);
         $admin_api_restriction = $config->get('admin_api_blocking');
         $admin_api_whitelist = $config->get('admin_api_whitelist', []);
         $ip = $request->getServerParams()['REMOTE_ADDR'];

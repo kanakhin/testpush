@@ -6,7 +6,7 @@ declare(strict_types=1);
  * Объект для получения параметров конфигурации из файла конфигурации
  */
 
-namespace Kanakhin\Push\Infrastructure;
+namespace Kanakhin\Push;
 
 class Config
 {

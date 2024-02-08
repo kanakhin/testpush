@@ -8,10 +8,8 @@ declare(strict_types=1);
 
 namespace Kanakhin\Push\Infrastructure\ApiControllers;
 
-use Kanakhin\Push\Application\UseCase\CodeGenerator\Request\CodeGeneratorRequest;
 use Kanakhin\Push\Application\UseCase\GetJsCodeForSiteUseCase;
 use Kanakhin\Push\Application\UseCase\Request\GetJsCodeForSiteRequest;
-use Kanakhin\Push\Infrastructure\Core;
 use Kanakhin\Push\Infrastructure\Repository\PdoSiteRepository;
 use Laminas\Diactoros\Response\HtmlResponse;
 

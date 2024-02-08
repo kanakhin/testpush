@@ -6,9 +6,8 @@ declare(strict_types=1);
  * Точка входа для http и console
  */
 
-namespace Kanakhin\Push\Infrastructure;
+namespace Kanakhin\Push;
 
-use Kanakhin\Push\Infrastructure\Config;
 use League\Container\Container;
 use League\Route\Router;
 use League\Route\Strategy\JsonStrategy;

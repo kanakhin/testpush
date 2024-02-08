@@ -15,9 +15,9 @@ use Kanakhin\Push\Application\UseCase\CodeGenerator\Response\InlineJavascriptByH
 use Kanakhin\Push\Application\UseCase\CodeGenerator\Response\InlineJavascriptByHostResponse;
 use Kanakhin\Push\Application\UseCase\CodeGenerator\Response\JavascriptCacheResponse;
 use Kanakhin\Push\Application\UseCase\CodeGenerator\Response\MinifyResponse;
+use Kanakhin\Push\Config;
+use Kanakhin\Push\Core;
 use Kanakhin\Push\Domain\Repository\SiteRepositoryInterface;
-use Kanakhin\Push\Infrastructure\Config;
-use Kanakhin\Push\Infrastructure\Core;
 
 class JsCodeGenerator implements CodeGeneratorInterface
 {

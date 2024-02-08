@@ -4,10 +4,9 @@ declare(strict_types=1);
 
 namespace Kanakhin\Push\Infrastructure\Repository;
 
+use Kanakhin\Push\Config;
 use Kanakhin\Push\Domain\Entity\Site;
-use Kanakhin\Push\Domain\Entity\Subscription;
 use Kanakhin\Push\Domain\Repository\SubscriberRepositoryInterface;
-use Kanakhin\Push\Infrastructure\Config;
 
 class PdoSubscriberRepository implements SubscriberRepositoryInterface
 {

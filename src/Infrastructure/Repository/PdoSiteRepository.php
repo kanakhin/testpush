@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Kanakhin\Push\Infrastructure\Repository;
 
 use GuzzleHttp\Psr7\Request;
+use Kanakhin\Push\Config;
 use Kanakhin\Push\Domain\Entity\Site;
 use Kanakhin\Push\Domain\Repository\SiteRepositoryInterface;
-use Kanakhin\Push\Infrastructure\Config;
 
 class PdoSiteRepository implements SiteRepositoryInterface
 {

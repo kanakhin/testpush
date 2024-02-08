@@ -7,7 +7,7 @@
 return function(\League\Container\Container $c) {
 
     $c->add(\PDO::class, function() use(&$c) {
-        $conf = $c->get(\Kanakhin\Push\Infrastructure\Config::class);
+        $conf = $c->get(\Kanakhin\Push\Config::class);
         $dsn = "mysql:host={$conf->get('db_host')}; port={$conf->get('db_port')}; dbname={$conf->get('db_name')}; charset=utf8";
         $pdo = new \PDO($dsn, $conf->get('db_user'), $conf->get('db_pass'));
         $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
@@ -19,19 +19,19 @@ return function(\League\Container\Container $c) {
 
     $c->add(\Kanakhin\Push\Infrastructure\Repository\PdoSiteRepository::class)
         ->addArgument(\PDO::class)
-        ->addArgument(\Kanakhin\Push\Infrastructure\Config::class);
+        ->addArgument(\Kanakhin\Push\Config::class);
 
     $c->add(\Kanakhin\Push\Infrastructure\Repository\PdoMessageRepository::class)
         ->addArgument(\PDO::class)
-        ->addArgument(\Kanakhin\Push\Infrastructure\Config::class);
+        ->addArgument(\Kanakhin\Push\Config::class);
 
     $c->add(\Kanakhin\Push\Infrastructure\Repository\PdoSubscriberRepository::class)
         ->addArgument(\PDO::class)
-        ->addArgument(\Kanakhin\Push\Infrastructure\Config::class);
+        ->addArgument(\Kanakhin\Push\Config::class);
 
     $c->add(\Kanakhin\Push\Infrastructure\CodeGenerator\JsCodeGenerator::class)
         ->addArgument(\PDO::class)
-        ->addArgument(\Kanakhin\Push\Infrastructure\Config::class)
+        ->addArgument(\Kanakhin\Push\Config::class)
         ->addArgument(\Kanakhin\Push\Infrastructure\Repository\PdoSiteRepository::class);
 
     $c->add(\Kanakhin\Push\Infrastructure\PushGateway\PushGateway::class);
