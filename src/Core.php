@@ -45,7 +45,7 @@ class Core
     {
         //Определение корневой директории
         self::$root = dirname(__DIR__) . '/..';
-
+die(self::$root);
         //Определение директории с кешем javascript файлов
         self::$varJsCache = self::$root . '/var/js_cache';
 
