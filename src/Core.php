@@ -44,8 +44,8 @@ class Core
     public static function init(): void
     {
         //Определение корневой директории
-        self::$root = dirname(__DIR__) . '/..';
-die(self::$root);
+        self::$root = dirname(__DIR__);
+
         //Определение директории с кешем javascript файлов
         self::$varJsCache = self::$root . '/var/js_cache';
 
