@@ -57,7 +57,7 @@ class Core
         self::$services = new Container();
         self::$services->defaultToShared();
         self::$services->add(Config::class, $config);
-        $servicesRegister = require self::$root . '/src/Infrastructure/Config/services.php';
+        $servicesRegister = require self::$root . '/src/Config/services.php';
         $servicesRegister(self::$services);
 
         //Установка московской часовой зоны по умолчанию
@@ -81,7 +81,7 @@ class Core
         $strategy->setContainer(self::$services);
         $router = new Router();
         $router->setStrategy($strategy);
-        $routesRegister = require self::$root . '/src/Infrastructure/Config/routes.php';
+        $routesRegister = require self::$root . '/src/Config/routes.php';
         $routesRegister($router);
         $response = $router->dispatch($request);
         $response = $response->withHeader('Access-Control-Allow-Origin', '*');
@@ -99,7 +99,7 @@ class Core
         set_time_limit(0);
         $application = new Application();
         $application->setName('Сервис рассылки пуш сообщений');
-        $applicationsRegister = require self::$root . '/src/Infrastructure/Config/console.php';
+        $applicationsRegister = require self::$root . '/src/Config/console.php';
         $applicationsRegister($application);
         return $application;
     }
