@@ -9,3 +9,4 @@
 /var/
 /composer.lock
 /git-deploy/
+/.idea/
