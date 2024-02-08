@@ -4,14 +4,9 @@ declare(strict_types=1);
 
 namespace Kanakhin\Push\Application\UseCase;
 
-use Kanakhin\Push\Application\UseCase\CodeGenerator\CodeGeneratorInterface;
-use Kanakhin\Push\Application\UseCase\CodeGenerator\Request\InlineJavascriptByHashIdRequest;
-use Kanakhin\Push\Application\UseCase\Request\GetInlineCodeByHashIdRequest;
 use Kanakhin\Push\Application\UseCase\Request\GetSubscriptionsToMessageRequest;
-use Kanakhin\Push\Application\UseCase\Response\GetInlineCodeByHashIdResponse;
 use Kanakhin\Push\Application\UseCase\Response\GetSubscriptionsToMessageResponse;
 use Kanakhin\Push\Domain\Repository\MessageRepositoryInterface;
-use Kanakhin\Push\Domain\Repository\SiteRepositoryInterface;
 use Kanakhin\Push\Domain\Repository\SubscriberRepositoryInterface;
 
 class GetSubscriptionsForMessageUseCase

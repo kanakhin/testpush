@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Kanakhin\Push\Infrastructure\PushGateway;
 
-use Kanakhin\Push\Application\UseCase\PushGateway\PushGatewayInterface;
-use Kanakhin\Push\Application\UseCase\PushGateway\Request\SendPushRequest;
-use Kanakhin\Push\Application\UseCase\PushGateway\Response\SendPushResponse;
+use Kanakhin\Push\Application\PushGateway\PushGatewayInterface;
+use Kanakhin\Push\Application\PushGateway\Request\SendPushRequest;
+use Kanakhin\Push\Application\PushGateway\Response\SendPushResponse;
 use Minishlink\WebPush\Subscription;
 use Minishlink\WebPush\WebPush;
 

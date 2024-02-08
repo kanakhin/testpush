@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Kanakhin\Push\Application\UseCase;
 
-use Kanakhin\Push\Application\UseCase\PushGateway\PushGatewayInterface;
+use Kanakhin\Push\Application\PushGateway\PushGatewayInterface;
+use Kanakhin\Push\Application\PushGateway\Request\SendPushRequest as PushGatewaySendPushRequest;
 use Kanakhin\Push\Application\UseCase\Request\SendPushRequest;
 use Kanakhin\Push\Application\UseCase\Response\SendPushResponse;
-use Kanakhin\Push\Application\UseCase\PushGateway\Request\SendPushRequest as PushGatewaySendPushRequest;
 
 class SendPushUseCase
 {

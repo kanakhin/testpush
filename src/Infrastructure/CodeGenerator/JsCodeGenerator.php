@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace Kanakhin\Push\Infrastructure\CodeGenerator;
 
-use Kanakhin\Push\Application\UseCase\CodeGenerator\CodeGeneratorInterface;
-use Kanakhin\Push\Application\UseCase\CodeGenerator\Request\CodeGeneratorRequest;
-use Kanakhin\Push\Application\UseCase\CodeGenerator\Request\InlineJavascriptByHashIdRequest;
-use Kanakhin\Push\Application\UseCase\CodeGenerator\Request\InlineJavascriptByHostRequest;
-use Kanakhin\Push\Application\UseCase\CodeGenerator\Request\JavascriptCacheRequest;
-use Kanakhin\Push\Application\UseCase\CodeGenerator\Request\MinifyRequest;
-use Kanakhin\Push\Application\UseCase\CodeGenerator\Response\CodeGeneratorResponse;
-use Kanakhin\Push\Application\UseCase\CodeGenerator\Response\InlineJavascriptByHashIdResponse;
-use Kanakhin\Push\Application\UseCase\CodeGenerator\Response\InlineJavascriptByHostResponse;
-use Kanakhin\Push\Application\UseCase\CodeGenerator\Response\JavascriptCacheResponse;
-use Kanakhin\Push\Application\UseCase\CodeGenerator\Response\MinifyResponse;
+use Kanakhin\Push\Application\CodeGenerator\CodeGeneratorInterface;
+use Kanakhin\Push\Application\CodeGenerator\Request\CodeGeneratorRequest;
+use Kanakhin\Push\Application\CodeGenerator\Request\InlineJavascriptByHashIdRequest;
+use Kanakhin\Push\Application\CodeGenerator\Request\InlineJavascriptByHostRequest;
+use Kanakhin\Push\Application\CodeGenerator\Request\JavascriptCacheRequest;
+use Kanakhin\Push\Application\CodeGenerator\Request\MinifyRequest;
+use Kanakhin\Push\Application\CodeGenerator\Response\CodeGeneratorResponse;
+use Kanakhin\Push\Application\CodeGenerator\Response\InlineJavascriptByHashIdResponse;
+use Kanakhin\Push\Application\CodeGenerator\Response\InlineJavascriptByHostResponse;
+use Kanakhin\Push\Application\CodeGenerator\Response\JavascriptCacheResponse;
+use Kanakhin\Push\Application\CodeGenerator\Response\MinifyResponse;
 use Kanakhin\Push\Config;
 use Kanakhin\Push\Core;
 use Kanakhin\Push\Domain\Repository\SiteRepositoryInterface;

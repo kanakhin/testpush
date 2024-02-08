@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Kanakhin\Push\Application\UseCase;
 
-use Kanakhin\Push\Application\UseCase\CodeGenerator\CodeGeneratorInterface;
-use Kanakhin\Push\Application\UseCase\CodeGenerator\Request\CodeGeneratorRequest;
+use Kanakhin\Push\Application\CodeGenerator\CodeGeneratorInterface;
+use Kanakhin\Push\Application\CodeGenerator\Request\CodeGeneratorRequest;
 use Kanakhin\Push\Application\UseCase\Request\GetJsCodeForSiteRequest;
 use Kanakhin\Push\Application\UseCase\Response\GetJsCodeForSiteResponse;
 use Kanakhin\Push\Domain\Repository\SiteRepositoryInterface;
