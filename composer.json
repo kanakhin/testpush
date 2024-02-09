@@ -23,10 +23,5 @@
 	},
 	"config": {
 		"optimize-autoloader": true
-	},
-	"scripts": {
-		"post-install-cmd": [
-			"Kanakhin\\Push\\Application\\Install::postInstall"
-		]
 	}
 }
