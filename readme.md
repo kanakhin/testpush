@@ -9,7 +9,6 @@
 ### Консольные команды  
 - `php console core:cron`  
 Команда должна быть запущена в cron для выполнения каждую минуту.  
-Для принудительного запуска задачи вручную (имя задачи - имя класса из пространства имен \Kanakhin\Push\Application\PeriodicTasks) можно запускать команду с флагом -f c переданным именем задачи:  `php console core:cron -f SyncCachedStatistics`  
 
 - `php console sites:add site.com`  
 Добавление нового сайта.  
